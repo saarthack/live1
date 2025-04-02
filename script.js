@@ -1,21 +1,26 @@
-var btn = document.querySelector('button')
-var body = document.querySelector('body')
+var box = document.querySelector('#box')
 
-btn.addEventListener('click',function(){
-
-    var x = Math.random()*90
-    var y = Math.random()*90
-    var rot = Math.random()*360
-
-    var img = document.createElement('img')
-
-    img.setAttribute('src','./img1.png')
-    img.style.height = '100px'
-    img.style.position = 'absolute'
-    img.style.left = x+'%'
-    img.style.top = y+'%'
-    img.style.rotate = rot+'deg'
-
-    body.appendChild(img)
+box.addEventListener('click',function(){
+    console.log('clicked on box');
 })
-
+box.addEventListener('mouseenter',function(){
+    console.log('Mouse Entered on box');
+})
+box.addEventListener('mouseleave',function(){
+    console.log('Mouse Left from box');
+})
+box.addEventListener('mousemove',function(dets){
+    console.log('MouseMoving on box',dets);
+})
+document.addEventListener('keydown',function(dets){
+    console.log('Key down',dets);
+})
+document.addEventListener('keyup',function(dets){
+    console.log('Key Up',dets);
+})
+document.addEventListener('wheel',function(dets){
+    console.log('Wheel moving',dets);
+})
+document.addEventListener('scroll',function(dets){
+    console.log('Scrolling...',dets);
+})

@@ -16,7 +16,7 @@ body{
     justify-content: center;
     gap: 40px;
 }
-
+/* 
 
 button{
     background-color: rgb(3, 136, 90);
@@ -32,4 +32,13 @@ button:active{
     scale: 0.95;
 } 
 
+ */
 
+
+
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+}
