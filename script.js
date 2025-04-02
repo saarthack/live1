@@ -1,20 +1,21 @@
 var btn = document.querySelector('button')
-var percent = document.querySelector('#percent')
-var growth = document.querySelector('#growth')
-
-var grow = 0
+var body = document.querySelector('body')
 
 btn.addEventListener('click',function(){
-    var int = setInterval(function(){
-        grow++
-        percent.innerHTML = grow+'%'
-        growth.style.width = grow+'%'
-    },40)
 
-    setTimeout(() => {
-        clearInterval(int)
-        btn.innerHTML = 'Downloaded'
-        btn.style.opacity = 0.5
-    }, 4000);
+    var x = Math.random()*90
+    var y = Math.random()*90
+    var rot = Math.random()*360
 
+    var img = document.createElement('img')
+
+    img.setAttribute('src','./img1.png')
+    img.style.height = '100px'
+    img.style.position = 'absolute'
+    img.style.left = x+'%'
+    img.style.top = y+'%'
+    img.style.rotate = rot+'deg'
+
+    body.appendChild(img)
 })
+
