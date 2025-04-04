@@ -1,5 +1,3 @@
-1. Make a Instagram Like feature(old) with dblclick event and setTimeout
+Find image on a Pinterest 'users card UI' and get a 10 users data from ChatGPT having the same properties on the image you got on Pinterest and insert the data off array of object in that UI
 
-2. Make custom cursor feature with the help of mousemove, mouseenter and mouseleave
-
-3. Make a webpage of 2-3 pages with navbar when you scroll down Navigation bar goes up and disappear and when you scroll up it comes back
+Complete today's class task with better UI and better functionalities
